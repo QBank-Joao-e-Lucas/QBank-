@@ -17,6 +17,14 @@ Criação e gestão de contas bancárias.
 Sistema de segurança para proteção de dados sensíveis.
 Operações bancárias como depósitos, saques e transferências.
 
+# 3. Roadmap
+ 
+ [x] Cadastro e autenticação de usuários.
+ [ ] Sistema básico de segurança.
+ [ ] Operações bancárias (depósito, saque, transferência).
+ [ ] Sistema de notificações para movimentações financeiras.
+ [ ] Aplicação de criptografia avançada para dados confidenciais.
+ [ ] Testes automatizados.
 
 # 3. Como Executar o Projeto (Passo a Passo)
 
