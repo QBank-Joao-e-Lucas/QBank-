@@ -7,22 +7,13 @@ Desenvolver um sistema que permite que os clientes do banco realizem diversas op
 
 # 1. Inicializão do Projeto
 
-![Captura de tela 2024-10-31 183147](https://github.com/user-attachments/assets/b9fd9291-e7d8-44f3-81ce-0ef9b06499a4)
+![Captura de tela 2024-10-31 185455](https://github.com/user-attachments/assets/068b713d-9e88-455b-ae81-62b0f1e94a04)
 
+![Captura de tela 2024-10-31 185521](https://github.com/user-attachments/assets/22afb1b6-b842-4e2f-bb56-41e1896522a1)
 
-![Captura de tela 2024-10-31 183224](https://github.com/user-attachments/assets/87bddff1-1c27-4bb0-b7d5-11c7401e067a)
+![Captura de tela 2024-10-31 185550](https://github.com/user-attachments/assets/c8256abe-0d60-4bf3-a8a5-9d6219673152)
 
-
-![Captura de tela 2024-10-31 183235](https://github.com/user-attachments/assets/51eecb26-d177-4f73-ac65-5e475877c896)
-
-
-![Captura de tela 2024-10-31 183310](https://github.com/user-attachments/assets/d3c39a3c-8e29-4b88-92f5-27d13daf6482)
-
-
-![Captura de tela 2024-10-31 183337](https://github.com/user-attachments/assets/dbe9fc18-d66a-4d45-953d-801ca413ed37)
-
-
-![Captura de tela 2024-10-31 183355](https://github.com/user-attachments/assets/eaba7195-b07e-4de6-9db6-428775239233)
+![Captura de tela 2024-10-31 185835](https://github.com/user-attachments/assets/725fb21c-0dbd-4bb3-a18a-731f223a0b4f)
 
 
 
