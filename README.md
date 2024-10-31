@@ -12,14 +12,18 @@ Desenvolver um sistema que permite que os clientes do banco realizem diversas op
 # 2. Funcionalidades
 
 Cadastro de novos usuários.
+
 Login seguro com verificação de credenciais.
+
 Criação e gestão de contas bancárias.
+
 Sistema de segurança para proteção de dados sensíveis.
+
 Operações bancárias como depósitos, saques e transferências.
 
 # 3. Roadmap
  
- [ x ] Cadastro e autenticação de usuários.
+ [x] Cadastro e autenticação de usuários.
 
  [ ] Sistema básico de segurança.
  
@@ -34,14 +38,21 @@ Operações bancárias como depósitos, saques e transferências.
 # 3. Como Executar o Projeto (Passo a Passo)
 
 # 4. Tecnologias Utilizadas
+
 Java para lógica de back-end.
+
 Spring Boot para criar o servidor da aplicação.
+
 MySQL para armazenamento de dados.
+
 JWT (JSON Web Token) para autenticação e segurança.
 
 # 5. Uso
+
 Cadastro: O usuário deve inserir dados como nome, CPF e senha.
+
 Login: Ao entrar, o usuário insere seu CPF e senha.
+
 Segurança: Todas as requisições são protegidas com autenticação por token.
 
 # 6. Resultados Esperados
