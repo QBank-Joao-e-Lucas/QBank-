@@ -19,7 +19,7 @@ Operações bancárias como depósitos, saques e transferências.
 
 # 3. Roadmap
  
- [x] Cadastro e autenticação de usuários.
+ [ x ] Cadastro e autenticação de usuários.
  [ ] Sistema básico de segurança.
  [ ] Operações bancárias (depósito, saque, transferência).
  [ ] Sistema de notificações para movimentações financeiras.
