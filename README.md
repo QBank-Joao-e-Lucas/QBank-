@@ -7,11 +7,20 @@ Desenvolver um sistema que permite que os clientes do banco realizem diversas op
 
 # 1. Inicializão do Projeto
 
+Aqui criamos a classe Usuario, para que o cliente consiga inserir os seus dados tanto para fazer login e cadastro mas para utilizar algumas das ações contidas no sistema.
+
 ![Captura de tela 2024-10-31 185455](https://github.com/user-attachments/assets/068b713d-9e88-455b-ae81-62b0f1e94a04)
+
+Neste passo, criamos uma classe Bando de Dados, para armazenar todos os dadosa do Usuário.
 
 ![Captura de tela 2024-10-31 185521](https://github.com/user-attachments/assets/22afb1b6-b842-4e2f-bb56-41e1896522a1)
 
+Aqui foi feito o sistema que dara o acesso ao usuário fazer o login.
+
+
 ![Captura de tela 2024-10-31 185550](https://github.com/user-attachments/assets/c8256abe-0d60-4bf3-a8a5-9d6219673152)
+
+Neste, é o sistema feito para caso o usuário esqueça a senha, ele tera a oportunidade de recupera-la
 
 ![Captura de tela 2024-10-31 185835](https://github.com/user-attachments/assets/725fb21c-0dbd-4bb3-a18a-731f223a0b4f)
 
