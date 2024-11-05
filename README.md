@@ -43,7 +43,7 @@ Operações bancárias como depósitos, saques e transferências.
 
  [ ] Sistema básico de segurança.
  
- [ ] Operações bancárias (depósito, saque, transferência).
+ [X] Operações bancárias (depósito, saque, transferência).
  
  [ ] Sistema de notificações para movimentações financeiras.
  
