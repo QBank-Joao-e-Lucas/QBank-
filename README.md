@@ -63,6 +63,8 @@ MySQL para armazenamento de dados.
 
 JWT (JSON Web Token) para autenticação e segurança.
 
+Controle de fluxo (if/else) para verificar se os valores de depósito, saque e transferência são válidos.
+
 # 5. Uso
 
 Cadastro: O usuário deve inserir dados como nome, CPF e senha.
