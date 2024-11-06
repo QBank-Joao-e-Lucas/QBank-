@@ -27,11 +27,11 @@ Sistema para que o usuario consiga depositar dinheiro em sua conta.
 
 ![Captura de tela 2024-11-05 211556](https://github.com/user-attachments/assets/d9021c5f-908a-46b4-b3f3-38d499149588)
 
-Neste caso, é um sistemaque com ele o usuario consegue sacar qualquer quantia em dinheiro.
+Neste caso, é um sistema que com ele o usuario consegue sacar qualquer quantia em dinheiro.
 
 ![Captura de tela 2024-11-05 211616](https://github.com/user-attachments/assets/d3c5c10f-94bb-4d22-8662-272c7261cdbd)
 
-Aqui, desenvolvemos um sistema que da acesso ao ususario poder fazer uqlauqer tipo de transferencia.
+Aqui, desenvolvemos um sistema que da acesso ao usuario poder fazer qualquer tipo de transferencia.
 
 ![Captura de tela 2024-11-05 211634](https://github.com/user-attachments/assets/b7553198-e1a5-441e-a4a7-9accfc2ee2f7)
 
