@@ -1,4 +1,4 @@
-name: Run Tests
+name: Testando Actions
 
 on:
   push:
@@ -9,21 +9,15 @@ on:
       - main
 
 jobs:
-  build:
+  exemplo:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repository
-      uses: actions/checkout@v2
+      - name: Configurando repositório
+        uses: actions/checkout@v2
 
-    - name: Set up Java
-      uses: actions/setup-java@v2
-      with:
-        java-version: '11'
-        distribution: 'temurin'
+      - name: Passo 1 - Exibindo mensagem
+        run: echo "Ação 1: Iniciando o workflow no GitHub Actions"
 
-    - name: Install dependencies
-      run: echo "Sem código ainda"
-
-    - name: Run Tests
-      run: echo "Sem testes ainda"  
+      - name: Passo 2 - Exibindo outra mensagem
+        run: echo "Ação 2: Tudo funcionando perfeitamente!"
