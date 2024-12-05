@@ -28,3 +28,7 @@ jobs:
 
       - name: Run Tests
         run: ./gradlew test --no-daemon
+
+      - name: Confirm Successful Tests
+        if: success()
+        run: echo "Todos os testes foram concluídos com sucesso! A transferência está pronta para ser realizada."
