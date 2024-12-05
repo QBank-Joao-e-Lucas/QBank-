@@ -9,7 +9,6 @@ public class TransactionService {
         if (amount <= 0) {
             return null;
         }
-
         return String.format("Transferência de R$%.2f de %s para %s via %s efetuada.",
                 amount, fromAccount, toAccount, type);
     }

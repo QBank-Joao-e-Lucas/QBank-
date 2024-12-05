@@ -12,30 +12,31 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor("io.micronaut:micronaut-inject-java")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+
+    implementation("io.micronaut:micronaut-runtime")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
-    compileOnly("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut:micronaut-validation")
     runtimeOnly("ch.qos.logback:logback-classic")
+
     testImplementation("io.micronaut:micronaut-http-client")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
-    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     testImplementation("io.micronaut:micronaut-http-server-netty")
-
 }
-
 
 application {
-    mainClass = "qbank.Application"
+    mainClass.set("qbank.Application")
 }
+
 java {
-    sourceCompatibility = JavaVersion.toVersion("21")
-    targetCompatibility = JavaVersion.toVersion("21")
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
-
-
-graalvmNative.toolchainDetection = false
 
 micronaut {
     runtime("netty")
@@ -45,22 +46,21 @@ micronaut {
         annotations("qbank.*")
     }
     aot {
-        // Please review carefully the optimizations enabled below
-        // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
-        optimizeServiceLoading = false
-        convertYamlToJava = false
-        precomputeOperations = true
-        cacheEnvironment = true
-        optimizeClassLoading = true
-        deduceEnvironment = true
-        optimizeNetty = true
-        replaceLogbackXml = true
+        optimizeServiceLoading.set(false)
+        convertYamlToJava.set(false)
+        precomputeOperations.set(true)
+        cacheEnvironment.set(true)
+        optimizeClassLoading.set(true)
+        deduceEnvironment.set(true)
+        optimizeNetty.set(true)
+        replaceLogbackXml.set(true)
     }
 }
 
-
-tasks.named<io.micronaut.gradle.docker.NativeImageDockerfile>("dockerfileNative") {
-    jdkVersion = "21"
+graalvmNative {
+    toolchainDetection.set(false)
 }
 
-
+tasks.named<io.micronaut.gradle.docker.NativeImageDockerfile>("dockerfileNative") {
+    jdkVersion.set("21")
+}
