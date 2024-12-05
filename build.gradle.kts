@@ -12,22 +12,19 @@ repositories {
 }
 
 dependencies {
-    annotationProcessor("io.micronaut:micronaut-inject-java")
     annotationProcessor("io.micronaut:micronaut-http-validation")
     annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
-
-    implementation("io.micronaut:micronaut-runtime")
     implementation("io.micronaut.serde:micronaut-serde-jackson")
-    implementation("io.micronaut:micronaut-http-client")
-    implementation("io.micronaut:micronaut-validation")
+    compileOnly("io.micronaut:micronaut-http-client")
     runtimeOnly("ch.qos.logback:logback-classic")
-
     testImplementation("io.micronaut:micronaut-http-client")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
-    testImplementation("org.junit.jupiter:junit-jupiter-api")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.0")
     testImplementation("io.micronaut:micronaut-http-server-netty")
+    implementation("io.micronaut:micronaut-validation:3.7.1")
 }
+
 
 application {
     mainClass.set("qbank.Application")
