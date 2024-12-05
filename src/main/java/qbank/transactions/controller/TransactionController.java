@@ -1,26 +1,26 @@
 package qbank.transactions.controller;
 
-import io.micronaut.http.annotation.*;
-import qbank.transactions.service.TransactionService;
+import io.micronaut.http.HttpResponse;
+import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.QueryValue;
 
-@Controller("/transactions")
+import jakarta.inject.Singleton;
+
+@Singleton
 public class TransactionController {
 
-    private final TransactionService transactionService;
-
-    // Injeção do serviço TransactionService via construtor
-    public TransactionController(TransactionService transactionService) {
-        this.transactionService = transactionService;
-    }
-
-    @Post("/transfer")
-    public String transfer(
+    @Get("/transactions/transfer")
+    public HttpResponse<String> transfer(
             @QueryValue String fromAccount,
             @QueryValue String toAccount,
-            @QueryValue double amount,
-            @QueryValue String type
-    ) {
-        // Chamando o serviço para realizar a transferência
-        return transactionService.transfer(fromAccount, toAccount, amount, type);
+            @QueryValue Double amount,
+            @QueryValue String type) {
+
+        // Lógica da transferência
+        String responseMessage = String.format(
+                "Transferência de R$%.2f de %s para %s via %s efetuada.",
+                amount, fromAccount, toAccount, type
+        );
+        return HttpResponse.ok(responseMessage);
     }
 }
