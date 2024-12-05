@@ -7,8 +7,11 @@ public class TransactionService {
 
     public String transfer(String fromAccount, String toAccount, double amount, String type) {
         if (amount <= 0) {
-            throw new IllegalArgumentException("O valor da transferência deve ser maior que 0.");
+            return null; 
         }
-        return "Transferência de R$" + amount + " de " + fromAccount + " para " + toAccount + " via " + type + " efetuada.";
+
+
+        return String.format("Transferência de R$%.2f de %s para %s via %s efetuada.",
+                amount, fromAccount, toAccount, type);
     }
 }
