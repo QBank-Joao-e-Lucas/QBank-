@@ -17,18 +17,14 @@ public class TransactionControllerTest {
 
     @Test
     void testSuccessfulTransfer() {
-        try {
-            HttpResponse<String> response = client.toBlocking().exchange(
-                    "/transactions/transfer?fromAccount=123&toAccount=456&amount=1000&type=own",
-                    String.class
-            );
-            assertEquals(
-                    "Transferência de R$1000.00 de 123 para 456 via own efetuada.",
-                    response.body()
-            );
-        } catch (Exception e) {
-            fail("Erro durante a requisição: " + e.getMessage());
-        }
+        HttpResponse<String> response = client.toBlocking().exchange(
+                "/transactions/transfer?fromAccount=123&toAccount=456&amount=1000&type=own",
+                String.class
+        );
+
+        assertEquals(
+                "Transferência de R$1000.00 de 123 para 456 via own efetuada.",
+                response.body()
+        );
     }
 }
-
