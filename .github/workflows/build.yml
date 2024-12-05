@@ -23,8 +23,20 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
 
+    - name: Display environment variables
+      run: |
+        echo "JAVA_HOME=$JAVA_HOME"
+        echo "Gradle version:"
+        ./gradlew --version
+
     - name: Build with Gradle
-      run: ./gradlew build --no-daemon
+      run: ./gradlew build --no-daemon --stacktrace --info
+
+    - name: Run Micronaut Application (Optional)
+      run: ./gradlew run &
+      
+    - name: Wait for Application Startup (Optional)
+      run: sleep 10
 
     - name: Run Tests
-      run: ./gradlew test --no-daemon
+      run: ./gradlew test --no-daemon --stacktrace --info
