@@ -1,91 +1,49 @@
-# QBank
-Desenvolvimento do QBank, um banco digital utilizando a metodologia de Desenvolvimento Orientado por Testes (TDD) e ferramentas de integração contínua. 
+# QBank - Banco Digital
 
-## Objetivo 
-Desenvolver um sistema que permite que os clientes do banco realizem diversas operações bancárias por meio do aplicativo. Inclui gerenciamento de contas, transações para fazer transferências e pagamentos de serviços externos, como universidades e telefonia. A conta do cliente permitirá o acesso a todas essas operações.
+QBank é um sistema bancário digital que permite aos clientes realizarem operações bancárias através de um aplicativo. O sistema oferece funcionalidades como gerenciamento de contas bancárias e realização de transações financeiras, como transferências, depósitos e pagamentos para instituições externas.
 
-## 1. Inicialização do Projeto
+## Objetivo
 
-Aqui criamos a classe Usuário, para que o cliente consiga inserir os seus dados tanto para fazer login e cadastro, mas também para utilizar algumas das ações contidas no sistema.
+Desenvolver um sistema bancário completo que possibilite o gerenciamento de contas e a realização de operações financeiras através de uma interface simples e segura. O sistema inclui operações como depósitos, saques e transferências entre contas, além de pagamentos para serviços externos como universidades e empresas de telefonia.
 
-![Captura de tela 2024-10-31 185455](https://github.com/user-attachments/assets/068b713d-9e88-455b-ae81-62b0f1e94a04)
+## Funcionalidades
 
-Neste passo, criamos uma classe Banco de Dados, para que consigamos armazenar todos os dados do Usuário.
+- **Operações Bancárias**: Realização de depósitos, saques e transferências entre contas, incluindo transferências para terceiros e pagamentos de serviços como universidades e telefonia.
+- **Transações Seguras**: Implementação de métodos seguros para a realização de transações financeiras.
+  
+## Tecnologias Utilizadas
 
-![Captura de tela 2024-10-31 185521](https://github.com/user-attachments/assets/22afb1b6-b842-4e2f-bb56-41e1896522a1)
+- **Java**: Linguagem utilizada para a lógica de back-end.
+- **Micronaut**: Framework para o desenvolvimento da aplicação, proporcionando uma estrutura leve e eficiente.
+  
+## Roadmap
 
-Aqui foi feito o sistema que é disponibilizado para que o usuário tenha acesso para fazer o login.
+1. **Operações Bancárias**:
+   - Depósitos em conta.
+   - Saques de valores.
+   - Transferências entre contas, incluindo transferências para terceiros.
+2. **Pagamentos para Instituições Externas**: Implementação de pagamentos para universidades, empresas de telefonia e outros serviços.
+3. **Testes Automatizados**: Desenvolvimento de testes unitários e de integração para garantir a robustez do sistema.
 
-![Captura de tela 2024-10-31 185550](https://github.com/user-attachments/assets/c8256abe-0d60-4bf3-a8a5-9d6219673152)
+### Pré-requisitos
+1. **Java 21**: Instale o JDK 21 em sua máquina.
+2. **Micronaut**: Certifique-se de ter o Micronaut configurado corretamente para executar o projeto.
+3. **MySQL**: Tenha o MySQL rodando localmente ou configure um banco de dados remoto.
+4. **Gradle**: Use o Gradle para build do projeto.
 
-Neste, é o sistema feito para caso o usuário esqueça a senha, ele terá a oportunidade de recuperá-la.
+# Resultados Esperados
 
-![Captura de tela 2024-10-31 185835](https://github.com/user-attachments/assets/725fb21c-0dbd-4bb3-a18a-731f223a0b4f)
+Ao final do desenvolvimento, espera-se que o QBank seja uma aplicação funcional que permita aos clientes realizar operações bancárias com segurança e eficiência. As principais operações que os usuários poderão realizar incluem:
 
-Sistema para que o usuário consiga depositar dinheiro em sua conta.
+- **Gestão de contas bancárias**: Criação e manutenção de contas.
+- **Depósitos e saques**: Realização de depósitos e saques de forma prática.
+- **Transferências**: Envio de dinheiro para outras contas, incluindo contas de terceiros.
+- **Pagamentos para instituições externas**: Pagamento de contas e serviços, como universidades e empresas de telefonia.
 
-![Captura de tela 2024-11-05 211556](https://github.com/user-attachments/assets/d9021c5f-908a-46b4-b3f3-38d499149588)
+# Contribuições
 
-Neste caso, é um sistema que permite ao usuário sacar qualquer quantia em dinheiro.
+Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, fique à vontade para abrir um Pull Request ou uma issue no GitHub.
 
-![Captura de tela 2024-11-05 211616](https://github.com/user-attachments/assets/d3c5c10f-94bb-4d22-8662-272c7261cdbd)
+# Licença
 
-Aqui, desenvolvemos um sistema que dá acesso ao usuário para realizar qualquer tipo de transferência.
-
-![Captura de tela 2024-11-05 211634](https://github.com/user-attachments/assets/b7553198-e1a5-441e-a4a7-9accfc2ee2f7)
-
-## 2. Funcionalidades
-
-- Cadastro de novos usuários.
-- Login seguro com verificação de credenciais.
-- Criação e gestão de contas bancárias.
-- Operações bancárias como depósitos, saques e transferências.
-
-## 3. Roadmap
-
-- [x] Cadastro e autenticação de usuários.
-- [x] Operações bancárias (depósito, saque, transferência).
-- [x] Sistema de notificações para movimentações financeiras.
-- [ ] Testes automatizados.
-
-## 4. Como Executar o Projeto (Passo a Passo)
-
-Após o projeto estar finalizado, siga os passos abaixo para executar o sistema localmente.
-
-## 5. Tecnologias Utilizadas
-
-- Java para lógica de back-end.
-- Micronaut para criar o servidor da aplicação.
-- MySQL para armazenamento de dados.
-- JWT (JSON Web Token) para autenticação e segurança.
-- Controle de fluxo (if/else) para verificar se os valores de depósito, saque e transferência são válidos.
-
-## 6. Uso
-
-- **Cadastro:** O usuário deve inserir dados como nome, CPF e senha.
-- **Login:** Ao entrar, o usuário insere seu CPF e senha.
-- **Transações:** Pix para terceiro, Pix para instituição, saque e depósito.
-
-## 7. Resultados Esperados
-
-Um sistema que permite que os clientes do banco realizem diversas operações bancárias por meio do aplicativo. Inclui gerenciamento de contas, transações para fazer transferências e pagamentos de serviços externos, como universidades e telefonia. A conta do cliente permitirá o acesso a todas essas operações.
-
-## Micronaut 4.7.1 Documentation
-
-- [User Guide](https://docs.micronaut.io/4.7.1/guide/index.html)
-- [API Reference](https://docs.micronaut.io/4.7.1/api/index.html)
-- [Configuration Reference](https://docs.micronaut.io/4.7.1/guide/configurationreference.html)
-- [Micronaut Guides](https://guides.micronaut.io/index.html)
----
-
-- [Micronaut Gradle Plugin documentation](https://micronaut-projects.github.io/micronaut-gradle-plugin/latest/)
-- [GraalVM Gradle Plugin documentation](https://graalvm.github.io/native-build-tools/latest/gradle-plugin.html)
-- [Shadow Gradle Plugin](https://plugins.gradle.org/plugin/com.github.johnrengelman.shadow)
-
-## Feature micronaut-aot documentation
-
-- [Micronaut AOT documentation](https://micronaut-projects.github.io/micronaut-aot/latest/guide/)
-
-## Feature serialization-jackson documentation
-
-- [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
